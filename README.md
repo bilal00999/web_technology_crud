@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # PHP MySQL CRUD System
 
 A simple CRUD (Create, Read, Update, Delete) web application built with PHP and MySQL.
@@ -21,7 +20,6 @@ A simple CRUD (Create, Read, Update, Delete) web application built with PHP and 
 
 ## Folder Structure
 
-```
 crud/
   DB.php        # database connection and table setup
   INDEX.php     # add new user form
@@ -29,15 +27,6 @@ crud/
   EDIT.php      # edit/update user
   DELETE.php    # delete user and resequence ids
   README.md     # this file
-```
-
-> Windows file system is case-insensitive; the filenames are shown uppercased for clarity.
-
-## Requirements
-
-- Laragon installed (https://laragon.org/)
-- PHP 8.0 or above
-- MySQL 8.0 or above
 
 ## Database Setup
 
@@ -59,20 +48,9 @@ CREATE TABLE IF NOT EXISTS users (
 );
 ```
 
-*Note:* `DB.php` will create the database and table automatically if they do not already exist.
-
-## How to Run
-
-1. Clone or copy this `crud` folder into `C:\laragon\www\` (or appropriate document root).
-2. Start Apache and MySQL via the Laragon control panel.
-3. Open your browser and navigate to:
-   `http://localhost/crud/VIEW.php` (or adjust path if you renamed the folder).
-
-The `VIEW.php` page shows all users with links to edit or delete them. Use `INDEX.php` to add new users.
-
 ## Video Tutorial
 
-🎬 [Watch Project Demo on Google Drive](#) *(replace with real link if available)*
+🎬 
 
 ## Changes & Updates
 
@@ -92,23 +70,3 @@ The `VIEW.php` page shows all users with links to edit or delete them. Use `INDE
 - City field included in form, table, and database
 - ID resequencing after delete to remove gaps
 
-## GitHub
-
-1. Initialize a Git repository inside the `crud` folder:
-   ```bash
-   cd d:\laragon\www\crud
-   git init
-   git add .
-   git commit -m "Add PHP MySQL CRUD System"
-   git remote add origin <your-github-repo-url>
-   git push -u origin main
-   ```
-
-2. Or create a repository on GitHub and push the files.
-
----
-
-Feel free to customize and expand this project for your learning or demo purposes!
-=======
- 
->>>>>>> 9dbe4e148a1e986a6a11d401557273534ffad4d7
