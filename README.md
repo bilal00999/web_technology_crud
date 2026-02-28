@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PHP MySQL CRUD System
 
 A simple CRUD (Create, Read, Update, Delete) web application built with PHP and MySQL.
@@ -108,3 +109,6 @@ The `VIEW.php` page shows all users with links to edit or delete them. Use `INDE
 ---
 
 Feel free to customize and expand this project for your learning or demo purposes!
+=======
+ 
+>>>>>>> 9dbe4e148a1e986a6a11d401557273534ffad4d7
