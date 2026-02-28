@@ -50,7 +50,7 @@ CREATE TABLE IF NOT EXISTS users (
 
 ## Video Tutorial
 
-🎬 
+🎬  https://www.loom.com/share/1a9f0b940ace40b4be58684e8dacdf4f
 
 ## Changes & Updates
 
