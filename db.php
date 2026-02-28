@@ -2,39 +2,29 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "bilal";
+$dbname = "php_crud_db";
 
-// Create connection without db first
+// create connection
 $conn = new mysqli($servername, $username, $password);
 
-// Check connection
+// check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// Create database if not exists
+// create database if not exists and select it
 $sql = "CREATE DATABASE IF NOT EXISTS $dbname";
-if ($conn->query($sql) === TRUE) {
-    // Database created or already exists
-} else {
-    echo "Error creating database: " . $conn->error;
-}
-
-// Select the database
+$conn->query($sql);
 $conn->select_db($dbname);
 
-// Create table if not exists
-$sql = "CREATE TABLE IF NOT EXISTS students (
-id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-name VARCHAR(100) NOT NULL,
-roll_no VARCHAR(50) NOT NULL,
-department VARCHAR(100) NOT NULL,
-section VARCHAR(50) NOT NULL
-)";
-
-if ($conn->query($sql) === TRUE) {
-    // Table created or already exists
-} else {
-    echo "Error creating table: " . $conn->error;
-}
+// create users table
+$sql = "CREATE TABLE IF NOT EXISTS users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100),
+    email VARCHAR(100),
+    phone VARCHAR(20),
+    age INT,
+    city VARCHAR(100)
+) ENGINE=InnoDB";
+$conn->query($sql);
 ?>
